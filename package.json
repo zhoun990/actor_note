@@ -1,22 +1,44 @@
 {
-  "main": "node_modules/expo/AppEntry.js",
-  "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
-    "eject": "expo eject"
-  },
-  "dependencies": {
-    "expo": "~42.0.1",
-    "expo-status-bar": "~1.0.4",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz",
-    "react-native-web": "~0.13.12"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.9.0"
-  },
-  "private": true
+	"main": "node_modules/expo/AppEntry.js",
+	"scripts": {
+		"start": "expo start",
+		"android": "expo start --android",
+		"ios": "expo start --ios",
+		"web": "expo start --web",
+		"eject": "expo eject"
+	},
+	"dependencies": {
+		"@react-native-async-storage/async-storage": "latest",
+		"@react-navigation/bottom-tabs": "latest",
+		"@react-navigation/native": "latest",
+		"@react-navigation/stack": "latest",
+		"@reduxjs/toolkit": "latest",
+		"expo": "~42.0.1",
+		"expo-ads-admob": "latest",
+		"expo-firebase-analytics": "~4.1.0",
+		"expo-haptics": "latest",
+		"expo-image-manipulator": "9.2.2",
+		"expo-image-picker": "10.2.3",
+		"expo-linking": "latest",
+		"expo-notifications": "0.12.3",
+		"expo-permissions": "12.1.1",
+		"expo-status-bar": "~1.0.4",
+		"react": "16.13.1",
+		"react-dom": "16.13.1",
+		"react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz",
+		"react-native-appearance": "~0.3.3",
+		"react-native-draggable-flatlist": "2.6.2",
+		"react-native-elements": "3.4.2",
+		"react-native-gesture-handler": "latest",
+		"react-native-reanimated": "~2.2.0",
+		"react-native-screens": "latest",
+		"react-native-web": "~0.13.12",
+		"react-redux": "latest",
+		"redux": "latest",
+		"redux-persist": "latest"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.9.0"
+	},
+	"private": true
 }

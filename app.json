@@ -1,32 +1,45 @@
 {
-  "expo": {
-    "name": "actor_note",
-    "slug": "actor_note",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
-  }
+	"expo": {
+		"name": "actor_note",
+		"slug": "actor_note",
+		"version": "1.0.0",
+		"orientation": "portrait",
+		"icon": "./assets/icon.png",
+		"splash": {
+			"image": "./assets/splash.png",
+			"resizeMode": "contain",
+			"backgroundColor": "#ffffff"
+		},
+		"updates": {
+			"fallbackToCacheTimeout": 0
+		},
+		"assetBundlePatterns": ["**/*"],
+		"ios": {
+			"supportsTablet": true,
+			"bundleIdentifier": "net.webbel.person-note",
+			"buildNumber": "1.0.0",
+			"userInterfaceStyle": "automatic",
+			"googleServicesFile": "./GoogleService-Info.plist",
+			"infoPlist": {
+				"NSPhotoLibraryUsageDescription": "添付画像を取得するためにフォトライブラリを使用します。",
+				"CFBundleDevelopmentRegion": "ja_JP"
+			}
+		},
+		"android": {
+			"adaptiveIcon": {
+				"foregroundImage": "./assets/adaptive-icon.png",
+				"backgroundColor": "#FFFFFF"
+			},
+			"permissions": [
+				"CAMERA",
+				"READ_EXTERNAL_STORAGE",
+				"WRITE_EXTERNAL_STORAGE"
+			],
+			"package": "net.webbel.person_note",
+			"versionCode": 2
+		},
+		"web": {
+			"favicon": "./assets/favicon.png"
+		}
+	}
 }
